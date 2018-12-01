@@ -1,4 +1,4 @@
-<h1>Welcome to lobby</h1>
+<h1>Welcome to <%= @current_room.name %></h1>
 <div id='message-list' class='row'>
     <%# <%= @messages |> Poison.encode!() %>
     <%# ^ encodowanie do jsona  - można było zamiast Poison użyć jasona - jest nowszy, ale kompatybilny%>

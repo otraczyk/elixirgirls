@@ -3,6 +3,9 @@ defmodule SlackirWeb.UserSocket do
 
   ## Channels
   # channel "room:*", SlackirWeb.RoomChannel
+  channel "random:lobby", SlackirWeb.RandomChannel # Add this line
+  channel "room:*", SlackirWeb.RoomChannel
+
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
@@ -31,3 +34,4 @@ defmodule SlackirWeb.UserSocket do
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil
 end
+
